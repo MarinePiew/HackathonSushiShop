@@ -1,0 +1,16 @@
+{
+  "data": {
+    "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "year": "1972",
+    "imdb_id": "tt0068646",
+    "director": "Francis Ford Coppola",
+    "name": "The Godfather",
+    "rating": "9.2",
+    "genre": "Crime,Drama",
+    "poster_url": "https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "stars": "Marlon Brando, Al Pacino, James Caan, Diane Keaton"
+  },
+  "error_code": 0,
+  "error": false,
+  "message": "Movie found"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "hackathonsushishop",
+  "version": "1.0.0",
+  "description": "Chat bot for Sushi Shop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "movieDb",
+    "webhook",
+    "nodejs",
+    "siddajmera"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
+}
