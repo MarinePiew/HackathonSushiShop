@@ -18,7 +18,13 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "dialogflow": "^0.1.0",
+    "dom-parser": "^0.1.5",
     "express": "^4.16.2",
+    "firebase": "^4.8.0",
+    "actions-on-google": "^1.0.0",
+    "firebase-admin": "^4.2.1",
+    "firebase-functions": "^0.5.7",
+    "html-entities": "^1.2.1",
     "path": "^0.12.7"
   }
 }
