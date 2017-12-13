@@ -1,31 +1,17 @@
-// const apiAi = require('./ApiAi');
+var apiai = require('apiai');
 
-// const client = new apiAi.ApiAiClient({
-//   accessToken: 'cda0fc3c3b8b4834a89b940d30106337'
-// });
+var app = apiai("cda0fc3c3b8b4834a89b940d30106337");
 
-// // recupérer du DOM la requête
-// function getRequest() {
-//   let request = document.getElementById('request').value;
-//   request.addEventListener('click', function (event) {
-//     client.textRequest(request)
-//       .then(handleResponse)
-//       .catch(handleError);
-//   });
-// }
+var request = app.textRequest('<Your text query>', {
+   sessionId: '<unique session id>'
+});
 
-// function handleResponse(serverResponse) {
-//   return res.json({
-//     fulfillment: {
-//       speech: `Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde`,
-//       displayText: `Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde`,
-//       source: `webhook`
-//     }
-//   });
-// }
+request.on('response', function(response) {
+   console.log(response);
+});
 
-// function handleError(serverError) {
-//   console.log(serverError);
-// }
+request.on('error', function(error) {
+   console.log(error);
+});
 
-// module.exports = getRequest;
+request.end();
