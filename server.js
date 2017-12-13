@@ -18,6 +18,10 @@ app.get('/', function (req, res, next) {
   res.render('index');
 });
 
+app.post('/webhook', function (req, res, next) {
+  res.json('OK');
+});
+
 const server = app.listen(port, () => {
   console.log(`Server is now listening on port ${port}`);
 });
