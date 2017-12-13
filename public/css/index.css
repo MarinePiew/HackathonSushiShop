@@ -1,4 +1,7 @@
 body {
-  background-image: url("../images/homepage.png");
+  background-image: url("../images/homepage.jpg");
   background-size: cover;
+}
+iframe{
+  border: none;
 }
