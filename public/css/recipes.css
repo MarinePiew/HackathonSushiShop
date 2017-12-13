@@ -1,0 +1,41 @@
+body{
+  background-color: #000;
+  font-family: "HelveticaNeueW01-45Ligh","Helvetica Neue",Helvetica;
+}
+h1, h3{
+  color: #b4a895;
+}
+h2, p, li{
+  color: #fff;
+}
+.color-sushi{
+  color: #b4a895 !important;
+}
+h3{
+  margin-top: 20px;
+}
+ul {
+  list-style:none;
+  border: 1px solid #b4a895;
+  padding: 25px;
+  margin-top: 15px;
+}
+p{
+  padding: 4px 0;
+}
+li{
+  padding: 2px 0;
+}
+.btn-sushi{
+  background-color: #93826f;
+  color: #fff;
+  height: 50px;
+  border-radius: inherit;
+}
+.dwl{
+  width: 20px;
+  margin: 0 5px;
+}
+img{
+  margin-top: 50px;
+}
