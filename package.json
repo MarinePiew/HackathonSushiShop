@@ -16,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apiai": "^4.0.3",
     "body-parser": "^1.18.2",
     "dialogflow": "^0.1.0",
     "dom-parser": "^0.1.5",

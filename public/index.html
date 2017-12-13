@@ -8,22 +8,24 @@
   <title>Sushi Shop</title>
   <link rel="stylesheet" href="./css/index.css">
   <link rel="shortcut icon" href="./images/logo-sushi-shop.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
 </head>
 
 <body>
 
-  <div class="homepage">
-    <iframe width="250" height="300" src="https://console.dialogflow.com/api-client/demo/embedded/1d2023c9-be5d-443e-b740-f93610a3d6d4">
-    </iframe>
-    <!-- <form action="post">
-      <input type="text" placeholder="Votre demande" id="request">
-      <button type="submit">Envoyer</button>
-    </form> -->
+  <div class="bot">
+    <textarea readOnly=t rue; id="response" cols="40" rows="20" style="resize: none;"></textarea>
+    <br />
+    <input id="input" type="text" placeholder="Type here..." autocomplete="off" />
+    <button id="rec">Speak</button>
   </div>
-  <script scr="js/ApiAi.js"></script>
+  <!-- <div class="homepage">
+    <iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/1d2023c9-be5d-443e-b740-f93610a3d6d4">
+    </iframe>
+  </div> -->
+  <!-- <script scr="js/ApiAi.js"></script> -->
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
   <script scr="js/index.js"></script>
+  <script scr="js/style.js"></script>
 </body>
 
 </html>
