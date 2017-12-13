@@ -19,7 +19,25 @@ app.get('/', function (req, res, next) {
 });
 
 app.post('/webhook', function (req, res, next) {
-  res.json('OK');
+    try {
+        return res.json({
+            "speech": "Recette",
+            "displayText": "Oeuf cocotte",
+            "data": {},
+            "contextOut": [],
+            "source": "", 
+            "followupEvent": {}
+        });
+    } catch (err) {
+        console.error("no request!", err);
+
+        return res.status(400).json({
+            status: {
+                code: 400,
+                errorType: err.message
+            }
+        });
+    }
 });
 
 const server = app.listen(port, () => {
