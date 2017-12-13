@@ -3,6 +3,21 @@ body {
   background-size: cover;
 }
 
-.b-agent-demo .b-agent-demo_header-icon img {
-  display: none !important;
+.homepage {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+iframe {
+  display: none;
+}
+
+.chatbot img {
+  width: 5%;
+  height: auto;
+  position: fixed;
+  top: 100px;
+  right: 64px;
+  cursor: pointer;
 }

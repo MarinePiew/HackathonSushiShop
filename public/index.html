@@ -12,10 +12,26 @@
 
 <body>
   <div class="homepage">
-    <iframe width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/1d2023c9-be5d-443e-b740-f93610a3d6d4">
+    <div class="chatbot">
+      <img src="./images/chatbot.png" alt="chatbot">
+    </div>
+    <iframe id="iframe" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/1d2023c9-be5d-443e-b740-f93610a3d6d4">
     </iframe>
   </div>
   <!-- <script scr="js/ApiAi.js"></script> -->
   <script scr="js/index.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      $('.chatbot').click(function(event) {
+        event.preventDefault();
+        $('iframe').css('display', 'block');
+      });
+    });
+  </script>
 </body>
+
 </html>
