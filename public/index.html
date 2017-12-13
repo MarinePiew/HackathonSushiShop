@@ -122,7 +122,7 @@ function send() {
         data: JSON.stringify({ query: text, lang: "fr", sessionId: "somerandomthing" }),
         success: function(data) {
         var respText = data.result.fulfillment.speech;
-        responsiveVoice.setDefaultVoice("French Female");
+        //responsiveVoice.setDefaultVoice("French Female");
         console.log("Respuesta: " + respText);
         setResponse(respText);
         responsiveVoice.speak(respText);
