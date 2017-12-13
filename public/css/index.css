@@ -2,6 +2,22 @@ body {
   background-image: url("../images/homepage.jpg");
   background-size: cover;
 }
-iframe{
-  border: none;
+
+.homepage {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+iframe {
+  display: none;
+}
+
+.chatbot img {
+  width: 5%;
+  height: auto;
+  position: fixed;
+  top: 100px;
+  right: 64px;
+  cursor: pointer;
 }
