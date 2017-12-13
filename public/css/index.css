@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/homepage.png");
+  background-image: url("../images/homepage.jpg");
   background-size: cover;
   width: 500px;
   margin: 0 auto;
@@ -20,29 +20,5 @@ button {
 }
 
 textarea {
-  width: 100%;
-}
-
-/* Bot style */
-
-bot.body {
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-bot.div {
-  position: absolute;
-}
-
-bot.input {
-  width: 400px;
-}
-
-bot.button {
-  width: 50px;
-}
-
-bot.textarea {
   width: 100%;
 }

@@ -20,7 +20,7 @@ app.get('/', function (req, res, next) {
 
 app.post('/webhook', function (req, res, next) {
     let request = req.body.result.resolvedQuery;
-    if (request.includes('oeufs')) {
+    if (request.includes('oeufs') | request.includes('œuf')) {
       return res.json({
         speech: `Bonjour Céline, Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde (Temps: 10 minutes de préparation, 10 minutes de cuisson). Voulez-vous faire la recette ?`,
         displayText: `Bonjour Céline, Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde (Temps: 10 minutes de préparation, 10 minutes de cuisson). Voulez-vous faire la recette ?`,

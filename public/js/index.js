@@ -1,6 +1,6 @@
 var apiai = require('apiai');
 
-var app = apiai("cda0fc3c3b8b4834a89b940d30106337");
+var app = apiai("3bcce1286e324b5e94541e923bfac943");
 
 var request = app.textRequest('<Your text query>', {
    sessionId: '<unique session id>'
