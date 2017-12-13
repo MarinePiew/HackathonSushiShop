@@ -19,7 +19,20 @@ app.get('/', function (req, res, next) {
 });
 
 app.post('/webhook', function (req, res, next) {
-  res.json('OK');
+  let ingredient = req.body.result.resolvedQuery;
+  return res.json({
+    fulfillment: {
+      speech: `Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde`,
+      displayText: `Sushi Shop vous propose une recette d'oeuf cocotte à la moutarde`,
+      source: `webhook`
+    }
+  });
+}, (error) => {
+  return res.json({
+    speech: 'Something went wrong!',
+    displayText: 'Something went wrong!',
+    source: 'webhook'
+  });
 });
 
 const server = app.listen(port, () => {
