@@ -2,3 +2,7 @@ body {
   background-image: url("../images/homepage.png");
   background-size: cover;
 }
+
+.b-agent-demo .b-agent-demo_header-icon img {
+  display: none !important;
+}
